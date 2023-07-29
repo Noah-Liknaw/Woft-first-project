@@ -70,14 +70,12 @@ class _signUpLoginBoxState extends State<signUpLoginBox> {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 43.0),
                 child: ElevatedButton(onPressed: (){if(_formkey.currentState!.validate()){
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Great!'))
-                  );
-                }
-                Navigator.of(context)
+                  Navigator.of(context)
                 .push(
                   MaterialPageRoute(builder: (context) => SigninPage())
                 );
+                }
+                
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
