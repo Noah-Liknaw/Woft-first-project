@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:hbgb/tabview.dart';
+import 'tabview.dart';
 
 class AboutPage extends StatefulWidget {
   const AboutPage({super.key});

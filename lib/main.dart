@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:woft_1st_project/Pages/SignUpPage.dart';
+import 'package:woft_1st_project/Pages/about.dart';
 import 'package:woft_1st_project/widgets/signUpBackgroundImg.dart';
 
 import 'Pages/SignInPage.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const SigninPage(),
+      home: const SignupPage(),
     );
   }
 }
