@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:woft_1st_project/screens/order_placed_screen.dart';
 import 'tabview.dart';
 
 class AboutPage extends StatefulWidget {
@@ -90,9 +91,9 @@ class _AboutPageState extends State<AboutPage> {
                 style: TextStyle(color: Colors.white70, fontSize: 20),
               ),
               onTap: () {
-                //           Navigator.push(
-                // context,
-                // MaterialPageRoute(builder: (context) => const MyCart()),
+                           Navigator.push(
+                 context,
+                MaterialPageRoute(builder: (context) => const OrderPlacedScreen()));
               },
             ),
             ListTile(
