@@ -146,10 +146,6 @@ xdg_directories
 2.18
 file:///home/noah-liknaw/.pub-cache/hosted/pub.dev/xdg_directories-1.0.1/
 file:///home/noah-liknaw/.pub-cache/hosted/pub.dev/xdg_directories-1.0.1/lib/
-woft_1st_project
-3.0
-file:///home/noah-liknaw/Music/Woft-first-project/
-file:///home/noah-liknaw/Music/Woft-first-project/lib/
 sky_engine
 3.0
 file:///home/noah-liknaw/snap/flutter/common/flutter/bin/cache/pkg/sky_engine/
@@ -162,4 +158,8 @@ flutter_test
 3.0
 file:///home/noah-liknaw/snap/flutter/common/flutter/packages/flutter_test/
 file:///home/noah-liknaw/snap/flutter/common/flutter/packages/flutter_test/lib/
+woft_1st_project
+3.0
+file:///media/noah-liknaw/THE%20OTHER%20HARD%20DRIVE/flutter%20projects/Woft-first-project/
+file:///media/noah-liknaw/THE%20OTHER%20HARD%20DRIVE/flutter%20projects/Woft-first-project/lib/
 2
