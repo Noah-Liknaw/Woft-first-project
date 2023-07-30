@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:woft_1st_project/Pages/about.dart';
 import 'package:woft_1st_project/widgets/buildpassword.dart';
 
 import 'buildEmail.dart';
@@ -96,6 +97,10 @@ class _signUpRegisterBoxState extends State<signUpRegisterBox> {
                     const SnackBar(content: Text('Great!'))
                   );
                 }
+                Navigator.of(context)
+                .push(
+                  MaterialPageRoute(builder: (context) => AboutPage())
+                );
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(

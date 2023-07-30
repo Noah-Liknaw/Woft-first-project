@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:woft_1st_project/Pages/SignInPage.dart';
 import 'package:woft_1st_project/widgets/buildpassword.dart';
 
 import 'buildUsername.dart';
@@ -69,10 +70,12 @@ class _signUpLoginBoxState extends State<signUpLoginBox> {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 43.0),
                 child: ElevatedButton(onPressed: (){if(_formkey.currentState!.validate()){
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Great!'))
-                  );
+                  Navigator.of(context)
+                .push(
+                  MaterialPageRoute(builder: (context) => SigninPage())
+                );
                 }
+                
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
