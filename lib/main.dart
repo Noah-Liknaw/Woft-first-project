@@ -6,6 +6,8 @@ import 'package:woft_1st_project/screens/order_placed_screen.dart';
 import 'package:woft_1st_project/widgets/signUpBackgroundImg.dart';
 
 import 'Pages/SignInPage.dart';
+import 'Pages/productList.dart';
+import 'models/productTypes_model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const ProductDetail(),
+      home: const ProductList(),
     );
   }
 }
