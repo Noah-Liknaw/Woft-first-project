@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:woft_1st_project/Pages/about.dart';
+import 'package:woft_1st_project/Pages/sdnav.dart';
 import 'package:woft_1st_project/screens/order_placed_screen.dart';
 
 import '../models/productTypes_model.dart';
@@ -18,7 +19,9 @@ class _ProductListState extends State<ProductList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const Dra(),
       appBar: AppBar(
+        title: Text("Prod detail"),
         flexibleSpace: Container(
       decoration: const BoxDecoration(
         gradient:         LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: <Color>[Color.fromRGBO(4, 99, 4, 1),Color.fromRGBO(76, 161, 70, 1)]),
@@ -41,14 +44,14 @@ class _ProductListState extends State<ProductList> {
                   child: Column(children: [
                     Text("Welcome to Ethiopian Digital Farmers", style: GoogleFonts.poppins(color: Colors.white,fontWeight: FontWeight.w500,fontSize: 14),),
                     Text("Join us on our mission to shape the future of agriculture. See more for today and unlock a world of possibilities for your farming endeavors. Together, let’s cultivate a brighter future for agriculture!",style: GoogleFonts.poppins(fontWeight: FontWeight.w600,fontSize: 11,color: Colors.white), textAlign: TextAlign.center,),
-                    ElevatedButton(onPressed: (){},child: Text("Learn more"),
+                    ElevatedButton(onPressed: (){},child: const Text("Learn more"),
                     style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    backgroundColor: Color.fromRGBO(4, 99, 4, 100),
+                    backgroundColor: const Color.fromRGBO(4, 99, 4, 100),
                     foregroundColor: Colors.white,
-                    minimumSize: Size(151, 35),
+                    minimumSize: const Size(151, 35),
                   ),
                     ),
                   ]),
@@ -66,7 +69,7 @@ class _ProductListState extends State<ProductList> {
                 child: Text("Lorem ipsum dolor",style: GoogleFonts.poppins(fontWeight: FontWeight.w700,fontSize: 17, color: Colors.black,),)
                 ),
               ),
-              SingleChildScrollView(
+              const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                 children: [

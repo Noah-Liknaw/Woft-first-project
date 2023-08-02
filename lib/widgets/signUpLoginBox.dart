@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:woft_1st_project/Pages/SignInPage.dart';
+import 'package:woft_1st_project/Pages/SignUpPage.dart';
+import 'package:woft_1st_project/Pages/about.dart';
 import 'package:woft_1st_project/widgets/buildpassword.dart';
 
 import 'buildUsername.dart';
@@ -72,7 +74,7 @@ class _signUpLoginBoxState extends State<signUpLoginBox> {
                 child: ElevatedButton(onPressed: (){if(_formkey.currentState!.validate()){
                   Navigator.of(context)
                 .push(
-                  MaterialPageRoute(builder: (context) => SigninPage())
+                  MaterialPageRoute(builder: (context) => AboutPage())
                 );
                 }
                 
