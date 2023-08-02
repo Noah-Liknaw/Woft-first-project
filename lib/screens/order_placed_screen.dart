@@ -23,7 +23,8 @@ class OrderPlacedScreen extends StatelessWidget {
       ),
     ),
       ),
-       body: Column(
+       body: SingleChildScrollView(child: 
+       Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(
@@ -257,7 +258,7 @@ class OrderPlacedScreen extends StatelessWidget {
             )
           ],
         ),
-      ),
+      ) ),
     );
   }
 }
