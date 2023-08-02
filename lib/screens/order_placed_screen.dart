@@ -15,35 +15,22 @@ class OrderPlacedScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: theme.colorScheme.onPrimary,
-        appBar: CustomAppBar(
-            height: getVerticalSize(112),
-            leadingWidth: 78,
-            leading: Padding(
-              padding: getPadding(left: 45, top: 56, bottom: 20),
-              child: IconButton(
-                padding: EdgeInsets.zero,
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                icon: Icon(
-                  Icons.arrow_back_ios,
-                  color: theme.colorScheme.onPrimary,
-                  size: getSize(35),
-                ),
-              ),
-            ),
-            centerTitle: true,
-            title: AppbarTitle(
-                text: "Order Placed", margin: getMargin(top: 61, bottom: 20)),
-            styleType: Style.GRADIENT),
-        body: Column(
+       appBar: AppBar(
+        title: Text("Order placed"),
+        flexibleSpace: Container(
+      decoration: const BoxDecoration(
+        gradient:         LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: <Color>[Color.fromRGBO(4, 99, 4, 1),Color.fromRGBO(76, 161, 70, 1)]),
+      ),
+    ),
+      ),
+       body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(
               height: getVerticalSize(15),
             ),
             Image.asset(
-              "assets/images/img_success.png",
+              "order-placed-image.png",
               fit: BoxFit.fitHeight,
             ),
             Column(

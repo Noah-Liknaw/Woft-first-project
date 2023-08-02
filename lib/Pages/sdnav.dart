@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:woft_1st_project/Pages/productList.dart';
 
 import '../screens/order_placed_screen.dart';
 import 'about.dart';
@@ -76,9 +77,9 @@ class _DraState extends State<Dra> {
                 style: TextStyle(color: Colors.white70, fontSize: 20),
               ),
               onTap: () {
-                //           Navigator.push(
-                // context,
-                // MaterialPageRoute(builder: (context) => const Shop()),
+                           Navigator.push(
+                 context,
+                 MaterialPageRoute(builder: (context) => const ProductList()));
               },
             ),
             ListTile(

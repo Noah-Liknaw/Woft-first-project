@@ -17,7 +17,12 @@ class _AboutPageState extends State<AboutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Dra(),
-      appBar: AppBar(title: Text("about"),),
+      appBar: AppBar(title: Text("about"),
+      flexibleSpace: Container(
+      decoration: const BoxDecoration(
+          gradient:         LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: <Color>[Color.fromRGBO(4, 99, 4, 1),Color.fromRGBO(76, 161, 70, 1)]),
+),
+    ),),
       body: Container(
         margin: const EdgeInsets.only(top: 2),
         child: Column(

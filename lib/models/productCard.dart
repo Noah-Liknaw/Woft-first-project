@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:woft_1st_project/Pages/productDetail.dart';
 import 'package:woft_1st_project/models/product.dart';
 
 class ProductCard extends StatelessWidget {
@@ -7,7 +8,14 @@ class ProductCard extends StatelessWidget {
   final Product product;
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return GestureDetector(
+      onTap: (){
+        Navigator.push(
+                 context,
+                 MaterialPageRoute(builder: (context) => const ProductDetail()));
+              ;
+      },
+      child: Container(
       width: 130,
       height: 165,
       decoration: BoxDecoration(
@@ -37,6 +45,7 @@ class ProductCard extends StatelessWidget {
               child: Text("Add to cart",style: GoogleFonts.poppins(fontSize: 10,fontWeight: FontWeight.w500),)),
         ],
       ),
-    );
+    ),
+    );   
   }
 }
