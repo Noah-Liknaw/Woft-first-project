@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:woft_1st_project/Pages/about.dart';
 import 'package:woft_1st_project/Pages/sdnav.dart';
+import 'package:woft_1st_project/models/product.dart';
 import 'package:woft_1st_project/screens/order_placed_screen.dart';
 
+import '../models/productCard.dart';
 import '../models/productTypes_model.dart';
 
 class ProductList extends StatefulWidget {
@@ -16,12 +18,17 @@ class ProductList extends StatefulWidget {
 }
 
 class _ProductListState extends State<ProductList> {
+  List<Product> products = [
+  Product('Avocado', 50, 'avocado-image.png'),
+  Product('banna ', 19.99, 'banna.png'),
+  Product('cabage', 5.99, 'cabage.png'),
+];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const Dra(),
       appBar: AppBar(
-        title: Text("Prod detail"),
+        title: Text("Welcome page"),
         flexibleSpace: Container(
       decoration: const BoxDecoration(
         gradient:         LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: <Color>[Color.fromRGBO(4, 99, 4, 1),Color.fromRGBO(76, 161, 70, 1)]),
@@ -85,6 +92,30 @@ class _ProductListState extends State<ProductList> {
             ],
           ),
           
+          // Row(
+          //   children: [
+          //     ProductCard(products[0]),
+          //   ],
+          // )
+
+Expanded(child: 
+                     Padding(
+                       padding: const EdgeInsets.symmetric(horizontal: 34, vertical: 22),
+                       child: GridView.builder(
+                                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                       crossAxisCount: 2, 
+                       crossAxisSpacing: 30.0, 
+                       mainAxisSpacing: 8.0, 
+                       mainAxisExtent: 195,
+                                        ),
+                                        itemCount: products.length,
+                                        itemBuilder: (BuildContext context, int index) {
+                       return ProductCard(products[index]);
+                                        },
+                                        
+                                      ),
+                     ), ),
+             
           
         ],
       )
