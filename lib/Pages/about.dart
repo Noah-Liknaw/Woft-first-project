@@ -28,8 +28,7 @@ class _AboutPageState extends State<AboutPage> {
         child: Column(
           children: [
             Stack(children: [
-              Image.network(
-                  'https://raw.githubusercontent.com/Aminadab23/task1assets/master/aboutimage.png'),
+              Image.asset("assets/images/aboutimage.png"),
               Builder(
                 builder: (BuildContext context) {
                   return GestureDetector(
@@ -38,7 +37,9 @@ class _AboutPageState extends State<AboutPage> {
                     //   child: Image.network(
                     //       'https://raw.githubusercontent.com/Aminadab23/task1assets/master/Vector.png'),
                     // ),
-                    child: const Icon(Icons.arrow_back_ios_new_outlined,size: 30,weight: 30, color: Colors.white70,),
+                    // child: const Icon(Icons.arrow_back_ios_new_outlined,size: 30,weight: 30, color: Colors.white70,),
+                    
+                    child: Text(""),
                     ),
                     onTap: () {
                       Scaffold.of(context).openDrawer();
@@ -49,8 +50,8 @@ class _AboutPageState extends State<AboutPage> {
               Center(
                 child: Container(
                   margin: const EdgeInsets.only(top: 170),
-                  child: Image.network(
-                      'https://raw.githubusercontent.com/Aminadab23/task1assets/master/vegansticky.png'),
+                  child: Image.asset(
+                      'assets/images/vegansticky.png'),
                 ),
               )
             ]),

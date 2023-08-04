@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:woft_1st_project/Pages/SignUpPage.dart';
 import 'package:woft_1st_project/widgets/signUpBackgroundImg.dart';
 import 'package:woft_1st_project/widgets/signUpLoginBox.dart';
 import 'package:woft_1st_project/widgets/signUpRegisterBox.dart';
@@ -13,12 +14,12 @@ class SigninPage extends StatefulWidget {
 class _SigninPageState extends State<SigninPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: 
       Stack(
         children: [
           SignUpBackgroundImage(),
-          signUpRegisterBox(),
+          SignUpRegisterBox(),
         ],
       ),
     );

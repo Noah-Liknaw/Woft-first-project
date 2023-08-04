@@ -6,7 +6,7 @@ class SignUpBackgroundImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Image.asset("signUpBg.png"),
+      body: Image.asset("assets/images/signUpBg.png"),
     );
   }
 }

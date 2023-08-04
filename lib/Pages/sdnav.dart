@@ -1,11 +1,14 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:woft_1st_project/Pages/cart.dart';
 import 'package:woft_1st_project/Pages/productList.dart';
 
 import '../screens/order_placed_screen.dart';
+import 'SignUpPage.dart';
 import 'about.dart';
-
+import 'package:get/get.dart';
+import 'editProfile.dart';
 class Dra extends StatefulWidget {
   const Dra({super.key});
 
@@ -30,9 +33,11 @@ class _DraState extends State<Dra> {
                     ),
                   ],
                   image: const DecorationImage(
-                      image: NetworkImage(
-                          'https://raw.githubusercontent.com/Aminadab23/task1assets/master/veggiesback.png'),
-                      fit: BoxFit.cover)),
+                      image: AssetImage(
+                         'assets/images/veggiesback.png'),
+                      fit: BoxFit.cover
+                      )
+                      ),
               child: Stack(
                 children: [
                   BackdropFilter(
@@ -45,8 +50,8 @@ class _DraState extends State<Dra> {
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: Image.network(
-                      'https://raw.githubusercontent.com/Aminadab23/task1assets/master/profilepic.png',
+                    child: Image.asset(
+                      'assets/images/profilepic.png',
                     ),
                   ),
                 ],
@@ -62,6 +67,7 @@ class _DraState extends State<Dra> {
                 style: TextStyle(color: Colors.white70, fontSize: 20),
               ),
               onTap: () {
+               Get.to(Editprofile());
                 //           Navigator.push(
                 // context,
                 // MaterialPageRoute(builder: (context) => const MyProfile()),
@@ -77,9 +83,11 @@ class _DraState extends State<Dra> {
                 style: TextStyle(color: Colors.white70, fontSize: 20),
               ),
               onTap: () {
-                           Navigator.push(
-                 context,
-                 MaterialPageRoute(builder: (context) => const ProductList()));
+
+                Get.to(ProductList());
+                //            Navigator.push(
+                //  context,
+                //  MaterialPageRoute(builder: (context) => const ProductList()));
               },
             ),
             ListTile(
@@ -92,9 +100,8 @@ class _DraState extends State<Dra> {
                 style: TextStyle(color: Colors.white70, fontSize: 20),
               ),
               onTap: () {
-                           Navigator.push(
-                 context,
-                MaterialPageRoute(builder: (context) => const OrderPlacedScreen()));
+                Get.to(MyCart());
+                          
               },
             ),
             ListTile(
@@ -107,10 +114,8 @@ class _DraState extends State<Dra> {
                 style: TextStyle(color: Colors.white70, fontSize: 20),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const AboutPage()),
-                );
+                Get.to(AboutPage());
+               
               },
             ),
             ListTile(
@@ -123,9 +128,9 @@ class _DraState extends State<Dra> {
                 style: TextStyle(color: Colors.white70, fontSize: 20),
               ),
               onTap: () {
-                //           Navigator.push(
-                // context,
-                // MaterialPageRoute(builder: (context) => const Logout()),
+               // the erase the login data
+
+               Get.to(SignupPage());
               },
             ),
           ],

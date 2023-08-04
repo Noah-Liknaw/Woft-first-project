@@ -26,7 +26,7 @@ class _ProductTypesState extends State<ProductTypes> {
           height: 58.44,
           color: Color.fromRGBO(76, 161, 70, 1),
         ),
-        Image.asset("veg1.png"),
+        Image.asset("assets/images/veg1.png"),
         Positioned(
           bottom: 0,
           child: Padding(

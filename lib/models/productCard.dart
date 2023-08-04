@@ -29,7 +29,7 @@ class ProductCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(product.imageUrl),
+          Image.asset("assets/images/${product.imageUrl}"),
           Text(product.name,style: GoogleFonts.poppins(fontWeight: FontWeight.w600,fontSize: 11, color: Colors.black),),
           Text(product.price.toString()+" ETB", style: GoogleFonts.istokWeb(fontSize: 14 ,fontWeight: FontWeight.w800, color: Colors.black),),
           ElevatedButton(
