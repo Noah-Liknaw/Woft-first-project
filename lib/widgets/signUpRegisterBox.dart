@@ -210,15 +210,11 @@ class _SignUpRegisterBoxState extends State<SignUpRegisterBox> {
                               print("sent");
 
                             } else {
-                              Get.snackbar("error",
-                                  "unable to sign up  ${res.statusCode}. ",
-                                  backgroundColor: Colors.red,
-                                  colorText: Colors.white);
+                              print("error unable to sign up  ${res.statusCode}. ");
+                                  
                             }
                           } catch (e) {
-                            Get.snackbar("err", " ${e}. ",
-                                backgroundColor: Colors.red,
-                                colorText: Colors.white);
+                            print("err, ${e}. " );
                           }
                         }
                       },

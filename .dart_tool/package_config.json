@@ -44,6 +44,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dob_input_field",
+      "rootUri": "file:///home/noah-liknaw/.pub-cache/hosted/pub.dev/dob_input_field-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///home/noah-liknaw/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -72,6 +78,12 @@
       "rootUri": "file:///home/noah-liknaw/snap/flutter/common/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "get",
+      "rootUri": "file:///home/noah-liknaw/.pub-cache/hosted/pub.dev/get-4.6.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
     },
     {
       "name": "google_fonts",
@@ -248,7 +260,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-07-30T11:19:36.444608Z",
+  "generated": "2023-08-04T22:58:02.713268Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }
