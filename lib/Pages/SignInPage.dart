@@ -15,13 +15,16 @@ class _SigninPageState extends State<SigninPage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: 
-      Stack(
+      body:  Stack(
         children: [
           SignUpBackgroundImage(),
-          SignUpRegisterBox(),
+          SingleChildScrollView(
+            child:           SignUpRegisterBox(),
+          )
         ],
-      ),
-    );
+        
+      ),);
+      
+    
   }
 }

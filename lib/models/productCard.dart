@@ -15,37 +15,40 @@ class ProductCard extends StatelessWidget {
                  MaterialPageRoute(builder: (context) => const ProductDetail()));
               ;
       },
-      child: Container(
-      width: 130,
-      height: 165,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-    color: Colors.white,
-    boxShadow: [
-      BoxShadow(color: Colors.green, spreadRadius: 3),
-    ],
+      child: Padding(
+        padding: const EdgeInsets.all(18.0),
+        child: Container(
+        width: 100,
+        height: 260,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+          color: Colors.white,
+          boxShadow: [
+        BoxShadow(color: Colors.green, spreadRadius: 3),
+          ],
+            ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image.asset("assets/images/${product.imageUrl}"),
+            Text(product.name,style: GoogleFonts.poppins(fontWeight: FontWeight.w600,fontSize: 11, color: Colors.black),),
+            Text(product.price.toString()+" ETB", style: GoogleFonts.istokWeb(fontSize: 14 ,fontWeight: FontWeight.w800, color: Colors.black),),
+            ElevatedButton(
+                onPressed: (){}, 
+                style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      backgroundColor: Color.fromRGBO(4, 99, 4, 100),
+                      foregroundColor: Colors.white,
+                      minimumSize: Size(100, 28),
+                    ), 
+                child: Text("Add to cart",style: GoogleFonts.poppins(fontSize: 10,fontWeight: FontWeight.w500),)),
+          ],
+        ),
           ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Image.asset("assets/images/${product.imageUrl}"),
-          Text(product.name,style: GoogleFonts.poppins(fontWeight: FontWeight.w600,fontSize: 11, color: Colors.black),),
-          Text(product.price.toString()+" ETB", style: GoogleFonts.istokWeb(fontSize: 14 ,fontWeight: FontWeight.w800, color: Colors.black),),
-          ElevatedButton(
-              onPressed: (){}, 
-              style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    backgroundColor: Color.fromRGBO(4, 99, 4, 100),
-                    foregroundColor: Colors.white,
-                    minimumSize: Size(100, 28),
-                  ), 
-              child: Text("Add to cart",style: GoogleFonts.poppins(fontSize: 10,fontWeight: FontWeight.w500),)),
-        ],
       ),
-    ),
     );   
   }
 }

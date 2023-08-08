@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:woft_1st_project/Pages/SignUpPage.dart';
 import 'package:woft_1st_project/Pages/about.dart';
+import 'package:woft_1st_project/Pages/onBoarding.dart';
 import 'package:woft_1st_project/Pages/productDetail.dart';
 import 'package:woft_1st_project/screens/order_placed_screen.dart';
 import 'package:woft_1st_project/widgets/signUpBackgroundImg.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const GetMaterialApp(
-      home:  SigninPage(),
+      home:  onboarding(),
     );
   }
 }
