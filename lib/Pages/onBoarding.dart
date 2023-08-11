@@ -81,6 +81,55 @@ class _MyAppState extends State<onboarding> {
                   horizontal: 45.0,
                   vertical: 90.0,
                 ),
+                child: Image.asset('farmer.gif',
+                    ),
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 45.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Made for farmers',
+                    style: TextStyle(fontSize: 25),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 45.0, vertical: 10.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'This app is here for all of your farming needs',
+                    style: TextStyle(fontSize: 15),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+    
+    PageModel(
+      widget: DecoratedBox(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(
+            width: 0.0,
+            color: Colors.white,
+          ),
+        ),
+        child: SingleChildScrollView(
+          controller: ScrollController(),
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 45.0,
+                  vertical: 90.0,
+                ),
                 child: Image.asset('veggies.jpg',
                     ),
               ),
@@ -111,6 +160,7 @@ class _MyAppState extends State<onboarding> {
         ),
       ),
     ),
+    
      ];
 
   @override
